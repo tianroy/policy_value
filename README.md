@@ -1,3 +1,9 @@
+get estimation:
+https://www.apexlifesettlements.com/estimate
+
+some knowledge:
+https://www.lsa-llc.com/life-settlement-calculator/
+
 # policy_value
 
 life stats are based on:
