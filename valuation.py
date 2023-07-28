@@ -41,7 +41,7 @@ policy_size = 100
 st.text(f'Policy Size: {policy_size} $')
 gender = st.selectbox('Gender', options=['male', 'female'])
 starting_age = st.slider('Age', min_value=0, max_value=110, value=60, step=1)
-annual_premium = st.slider('Annual Premium, you pay each year', min_value=1, max_value=50, value=2, step=1)
+annual_premium = st.slider('Annual Premium in $, eg: +2 means you pay policy owner 2$ per year', min_value=-10, max_value=40, value=2, step=1)
 discount_rate = st.slider('Discount Rate, 0.05 means 5%', min_value=0.01, max_value=0.1, value=0.05, step=0.01)
 risk_factor = st.slider('Risk Factor eg: 1.1 means 10% more chance of dying each year', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
 num_simulations = st.slider('Number of Simulations, small number will speed up the calculation', min_value=1000, max_value=10000, value=4000, step=500)
