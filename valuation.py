@@ -51,8 +51,8 @@ if st.button('Calculate!'):
     with st.spinner('Running the simulation...'):
         ages_of_death, pv_values = policy_valuation(data, starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, discount_rate)
     st.success('Calculation completed!')
-    st.write(f"Expected life till: {np.mean(ages_of_death)}")
-    st.write(f"Policy valuation: {np.mean(pv_values)}")
+    st.write(f"Expected life till: {np.mean(ages_of_death):.1f}")
+    st.write(f"Policy valuation: {np.mean(pv_values):.1f}")
     # Plot the results
     fig, ax = plt.subplots()
     ax.hist(ages_of_death, bins=range(starting_age, max(ages_of_death)+1), alpha=0.7, edgecolor='black')
