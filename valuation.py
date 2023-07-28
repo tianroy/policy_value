@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the data
-data = pd.read_csv('life_expect.csv')
+data = pd.read_csv('/Users/roy/workspace/policy_value/life_expect.csv')
 
 # Define your function here
 def policy_valuation(data, starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, discount_rate):
@@ -36,13 +36,14 @@ def policy_valuation(data, starting_age, gender, num_simulations, risk_factor, p
     return ages_of_death, pv_values
 
 # Use Streamlit to create sliders for the inputs
-starting_age = st.slider('Starting Age', min_value=0, max_value=100, value=50, step=1)
+policy_size = 100  
+st.text(f'Policy Size: {policy_size}')
 gender = st.selectbox('Gender', options=['male', 'female'])
+starting_age = st.slider('Starting Age', min_value=0, max_value=110, value=60, step=1)
+annual_premium = st.slider('Annual Premium, you pay each year', min_value=1, max_value=100, value=3, step=1)
+discount_rate = st.slider('Discount Rate, 0.05 means 5%', min_value=0.01, max_value=0.1, value=0.05, step=0.01)
+risk_factor = st.slider('Risk Factor eg: 1.1 means 10% more chance of dying each year', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
 num_simulations = st.slider('Number of Simulations', min_value=1000, max_value=10000, value=5000, step=500)
-risk_factor = st.slider('Risk Factor', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
-policy_size = st.slider('Policy Size', min_value=50, max_value=200, value=100, step=10)
-annual_premium = st.slider('Annual Premium', min_value=1, max_value=10, value=3, step=1)
-discount_rate = st.slider('Discount Rate', min_value=0.01, max_value=0.1, value=0.05, step=0.01)
 
 # Run the function and store its outputs when the button is pressed
 if st.button('Run Simulation'):
@@ -64,3 +65,6 @@ if st.button('Run Simulation'):
     ax.set_xlabel('Policy Valuation')
     ax.set_ylabel('Frequency')
     st.pyplot(fig)
+    
+st.markdown('© Olivia & Co. 2023')
+
