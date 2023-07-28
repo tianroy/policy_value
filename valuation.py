@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jul 28 21:55:40 2023
+
+@author: roy
+"""
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the data
+data = pd.read_csv('life_expect.csv')
+
+# Define your function here
+def policy_valuation(data, starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, discount_rate):
+    ages_of_death = []
+    pv_values = []
+    for _ in range(num_simulations):
+        age = starting_age
+        while True:
+            death_probability = data.loc[data['age'] == age, gender].values[0] * risk_factor
+            if np.random.rand() <= death_probability:
+                ages_of_death.append(age)
+                pv_death_benefit = policy_size / ((1 + discount_rate) ** (age - starting_age))
+                pv_premiums = sum([annual_premium / ((1 + discount_rate) ** i) for i in range(age - starting_age)])
+                pv_values.append(pv_death_benefit - pv_premiums)
+                break
+            age += 1
+            if age > max(data['age']):
+                ages_of_death.append(age)
+                pv_values.append(-sum([annual_premium / ((1 + discount_rate) ** i) for i in range(age - starting_age)]))
+                break
+    return ages_of_death, pv_values
+
+# Use Streamlit to create sliders for the inputs
+starting_age = st.slider('Starting Age', min_value=0, max_value=100, value=50, step=1)
+gender = st.selectbox('Gender', options=['male', 'female'])
+num_simulations = st.slider('Number of Simulations', min_value=1000, max_value=10000, value=5000, step=500)
+risk_factor = st.slider('Risk Factor', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
+policy_size = st.slider('Policy Size', min_value=50, max_value=200, value=100, step=10)
+annual_premium = st.slider('Annual Premium', min_value=1, max_value=10, value=3, step=1)
+discount_rate = st.slider('Discount Rate', min_value=0.01, max_value=0.1, value=0.05, step=0.01)
+
+# Run the function and store its outputs when the button is pressed
+if st.button('Run Simulation'):
+    with st.spinner('Running the simulation...'):
+        ages_of_death, pv_values = policy_valuation(data, starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, discount_rate)
+    st.success('Simulation completed!')
+    st.write(f"Expected life till: {np.mean(ages_of_death)}")
+    st.write(f"Policy valuation: {np.mean(pv_values)}")
+    # Plot the results
+    fig, ax = plt.subplots()
+    ax.hist(ages_of_death, bins=range(starting_age, max(ages_of_death)+1), alpha=0.7, edgecolor='black')
+    ax.set_title('Distribution of Age of Death')
+    ax.set_xlabel('Age of Death')
+    ax.set_ylabel('Frequency')
+    st.pyplot(fig)
+    fig, ax = plt.subplots()
+    ax.hist(pv_values, bins=100, alpha=0.7, edgecolor='black')
+    ax.set_title('Distribution of Policy Valuation')
+    ax.set_xlabel('Policy Valuation')
+    ax.set_ylabel('Frequency')
+    st.pyplot(fig)
