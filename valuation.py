@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the data
-data = pd.read_csv('/Users/roy/workspace/policy_value/life_expect.csv')
+data = pd.read_csv('life_expect.csv')
 
 # Define your function here
 def policy_valuation(data, starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, discount_rate):
