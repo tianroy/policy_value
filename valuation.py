@@ -50,7 +50,8 @@ max_age = max(data['age'])
 death_probabilities = {age: prob * risk_factor for age, prob in zip(data['age'], data[gender])}
 # first- discount 1 year; last - discount to max_age+1 year
 discount_factors = (1+discount_rate) ** -np.arange(1, max_age - starting_age + 2)
-cumulative_factors = np.cumsum(((1+discount_rate)/(1+annual_premium_increase)) ** -np.arange(1, max_age - starting_age + 2))
+cumulative_factors = np.cumsum(((1+discount_rate)/(1+annual_premium_increase)) ** -np.arange(1, max_age - starting_age + 1))
+cumulative_factors = np.insert(cumulative_factors, 0, 0)
 
 
 # Run the function and store its outputs when the button is pressed
