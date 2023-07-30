@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 # Load the data
 data = pd.read_csv('life_expect.csv')
 
-def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors):
+def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors, cumulative_factors):
     ages_of_death = []
     pv_values = []
     for _ in range(num_simulations):
@@ -28,7 +28,7 @@ def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_
                 pv_death_benefit = policy_size * discount_factors[age - starting_age]
                 # assume we pay premium at the end of the year
                 # if start_age=60, client die at 60, you dont pay premium, first pay at 61y year_begin and discounted at 1/1+r
-                pv_premiums = annual_premium * np.sum(discount_factors[:age - starting_age])
+                pv_premiums = annual_premium * cumulative_factors[age - starting_age]
                 pv_values.append(pv_death_benefit - pv_premiums)
                 break
             age += 1
@@ -49,7 +49,9 @@ num_simulations = st.slider('Number of Simulations, small number will speed up t
 max_age = max(data['age'])
 death_probabilities = {age: prob * risk_factor for age, prob in zip(data['age'], data[gender])}
 # first- discount 1 year; last - discount to max_age+1 year
-discount_factors = ((1+discount_rate)/(1+annual_premium_increase)) ** -np.arange(1, max_age - starting_age + 2)
+discount_factors = (1+discount_rate) ** -np.arange(1, max_age - starting_age + 2)
+cumulative_factors = np.cumsum(((1+discount_rate)/(1+annual_premium_increase)) ** -np.arange(1, max_age - starting_age + 2))
+
 
 # Run the function and store its outputs when the button is pressed
 if st.button('Calculate!'):
