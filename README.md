@@ -10,11 +10,13 @@ qulifacation:
 - Death Benefit: Your death benefit must be at least $100,000.
 - Age: You must be at least 65 years old to be eligible for a life settlement, and ideal candidates are typically 75 or older. 
 - Lifespan: You must have experienced a change in health and have a life expectancy of less than 15 years to qualify.
+
 https://www.lsa-llc.com/life-settlement-calculator/
 
 
 What Happens If Your Insurance Company Goes Out Of Business?
 - state guaranty association will pay up to 300k for life insurance
+
 https://www.forbes.com/advisor/life-insurance/company-out-of-business/
 
 # policy_value
