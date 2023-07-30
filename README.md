@@ -108,3 +108,6 @@ postulate whether the life settlement transactions are priced on their fair valu
 our knowledge about the balance between risk and return that investors demand.
 However, before that, on part 4.2 some considerations are provided regarding the
 understanding of risk that a pool of life settlement entails.
+
+to do:
+add a default % for each insurance co. 
