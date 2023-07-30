@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load the data
+# Load the life expectancy probability
 data = pd.read_csv('life_expect.csv')
 
 def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors, cumulative_factors):
@@ -48,13 +48,12 @@ num_simulations = st.slider('Number of Simulations, small number will speed up t
 
 max_age = max(data['age'])
 death_probabilities = {age: prob * risk_factor for age, prob in zip(data['age'], data[gender])}
-# first- discount 1 year; last - discount to max_age+1 year
+# first- discount 1 year; last- discount to max_age+1 year
 discount_factors = (1+discount_rate) ** -np.arange(1, max_age - starting_age + 2)
+# first-0, 2nd- cumulative discount 1 year, last- cumulative discount to max_age year
 cumulative_factors = np.cumsum(((1+discount_rate)/(1+annual_premium_increase)) ** -np.arange(1, max_age - starting_age + 1))
 cumulative_factors = np.insert(cumulative_factors, 0, 0)
 
-
-# Run the function and store its outputs when the button is pressed
 if st.button('Calculate!'):
     with st.spinner('Running the simulation...'):
         ages_of_death, pv_values = policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors, cumulative_factors)
@@ -76,4 +75,3 @@ if st.button('Calculate!'):
     st.pyplot(fig)
     
 st.markdown('© Olivia & Co. 2023')
-
