@@ -48,7 +48,8 @@ num_simulations = st.slider('Number of Simulations, small number will speed up t
 
 max_age = max(data['age'])
 death_probabilities = {age: prob * risk_factor for age, prob in zip(data['age'], data[gender])}
-discount_factors = (1 + discount_rate) ** -np.arange(max_age - starting_age + 1)
+# first- discount 1 year; last - discount to max_age+1 year
+discount_factors = (1 + discount_rate) ** -np.arange(1, max_age - starting_age + 2)
 
 # Run the function and store its outputs when the button is pressed
 if st.button('Calculate!'):
