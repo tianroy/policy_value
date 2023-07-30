@@ -56,7 +56,7 @@ cumulative_factors = np.cumsum(((1+discount_rate)/(1+annual_premium_increase)) *
 # Run the function and store its outputs when the button is pressed
 if st.button('Calculate!'):
     with st.spinner('Running the simulation...'):
-        ages_of_death, pv_values = policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors)
+        ages_of_death, pv_values = policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors, cumulative_factors)
     st.success('Calculation completed!')
     st.write(f"Expected life till: {np.mean(ages_of_death):.1f}")
     st.write(f"Policy valuation: {np.mean(pv_values):.1f}")
