@@ -21,7 +21,7 @@ def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_
         age = starting_age
         while True:
             death_probability = death_probabilities.get(age, 0)
-            if np.random.rand() <= death_probability or age > max_age:
+            if np.random.rand() <= death_probability or age >= max_age:
                 ages_of_death.append(age)
                 # assume we get the death benefit at the end of the year
                 # if start_age=60, client die at 60, death_benefit will be paid at 60y year_end and discounted at 1/1+r
