@@ -2,7 +2,19 @@ get estimation:
 https://www.apexlifesettlements.com/estimate
 
 some knowledge:
+- Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older
+- Surrendering a policy typically has a return of $469 per $100,000 (less than 0.5% compared to 20% from a life settlement). 
+qulifacation:
+- Policy Age: To qualify for a life settlement, you must have held your current policy for at least 2 years.
+- Death Benefit: Your death benefit must be at least $100,000.
+- Age: You must be at least 65 years old to be eligible for a life settlement, and ideal candidates are typically 75 or older. 
+- Lifespan: You must have experienced a change in health and have a life expectancy of less than 15 years to qualify.
 https://www.lsa-llc.com/life-settlement-calculator/
+
+
+What Happens If Your Insurance Company Goes Out Of Business?
+- state guaranty association will pay up to 300k for life insurance
+https://www.forbes.com/advisor/life-insurance/company-out-of-business/
 
 # policy_value
 
