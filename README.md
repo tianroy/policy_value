@@ -30,6 +30,27 @@ Life Settlement Industry Statistics for 2023
 
 https://www.harborlifesettlements.com/life-insurance-settlements-and-settlement-statistics/
 
+Life Settlement Regulations
+The momentum in life settlements caught the attention of state regulators in the
+late 1990s. The industry has since been shaped by state regulations as well as:
+- The Life Settlements Model Act, adopted by the National Conference of
+Insurance Regulators (NCOIL) in 2000. The act lays out requirements for
+contracts, disclosures, and reporting. It also specifies licensing requirements
+for agents and providers and describes prohibited business practices.
+- The Life Insurance Consumer Disclosure Model Act, adopted by NCOIL in
+2010, which mandates written disclosures to seniors in danger of policy
+lapse.
+- Tax Cuts and Jobs Act, signed into law in 2017, which defined a more
+favorable tax treatment for life settlements.
+- State-imposed waiting periods and disclosure laws. Eight states require life
+insurers to tell policyowners about life settlements before they surrender or
+lapse their policy. Thirty-three states have waiting periods, meaning a policy
+must be in force for a minimum duration before it can be sold. A
+state-mandated waiting period prevents people from buying insurance solely
+for the purpose of selling it. These waiting periods range from two to five
+years.
+
+
 our model:
 # policy_value
 
