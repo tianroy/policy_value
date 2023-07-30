@@ -2,7 +2,7 @@ get estimation:
 https://www.apexlifesettlements.com/estimate
 
 some knowledge:
-- Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older
+- Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older. (1.6-1.9%)
 - Surrendering a policy typically has a return of $469 per $100,000 (less than 0.5% compared to 20% from a life settlement). 
 
 qulifacation:
@@ -19,6 +19,18 @@ What Happens If Your Insurance Company Goes Out Of Business?
 
 https://www.forbes.com/advisor/life-insurance/company-out-of-business/
 
+
+Life Settlement Industry Statistics for 2023
+- The average life insurance policy has a face value of $168,000
+- 85% or more of life insurance policies don’t pay a death benefit: Statistically speaking, 85% of term policies and 88% of universal life policies will expire, lapse, or be surrendered before a death benefit is paid.
+- $200 billion worth of life insurance will be surrendered or lapsed annually through 2027: Even as closed settlements and third-party analyses continue to confirm that life settlements generate higher proceeds for policyholders, people still choose to lapse or surrender their life insurance. In many cases, these policyholders simply don’t know that selling their policy is an option.
+- More than half of Americans don’t know they can sell their life insurance: More than half (55%) of Americans aren’t familiar with life settlements and more than two-thirds (68%) of Americans aren’t familiar with viatical settlements.
+- The life settlement industry is growing 34% per year on average: The life settlement industry is poised to grow substantially in the coming years. Contributing factors include an aging population and generally low balances in retirement savings accounts. Between 2015 and 2025, the U.S. senior population will grow by 38%, and many of those seniors won’t have sufficient retirement savings to replace their working income. Those who have life insurance — estimated to be 50% of seniors — can liquidate those life insurance assets to produce much-needed funding for retirement.
+- $37.5 billion in lost wealth for seniors: The projected $200 billion in life insurance that will be lapsed or surrendered each year is potentially worth $50 billion on the life settlement market. That assumes a payout rate of 25%, the midpoint of the typical life settlement payout range of 20% to 30% of the policy’s face value. 
+
+https://www.harborlifesettlements.com/life-insurance-settlements-and-settlement-statistics/
+
+our model:
 # policy_value
 
 life stats are based on:
