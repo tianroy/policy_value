@@ -37,14 +37,14 @@ def policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_
 # Use Streamlit to create sliders for the inputs
 st.title("Life Settlement Valuation Service")
 policy_size = 100  
-st.text(f'Policy Size: {policy_size} USD, paid at the end of the event year')
+st.text(f'Policy Size: {policy_size} USD, receivable at the end of the event year')
 gender = st.selectbox('Gender', options=['male', 'female'])
 starting_age = st.slider('Age', min_value=0, max_value=110, value=80, step=1)
 annual_premium = st.slider('Annual Premium, eg: +3 means you pay 3 USD every year, premium is fixed every year for whole life insurance, first payable at the beginning of the next year', min_value=-10.0, max_value=20.0, value=3.0, step=0.1)
 annual_premium_increase = st.slider('Annual Premium Increase %, 5 means: you pay 3 usd this year, the next year you pay 3x(1+5%)=3.15 usd and so on', min_value=0.0, max_value=20.0, value=0.0, step=1.0) / 100
 discount_rate = st.slider('Discount Rate %, 5.3 means 5.3%', min_value=0.0, max_value=20.0, value=5.3, step=0.1) / 100
 risk_factor = st.slider('Risk Factor, eg: 1.1 means 10% more chance of dying each year comparing with average US person', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
-num_simulations = st.slider('Number of Simulations, small number will speed up the calculation', min_value=10000, max_value=500000, value=100000, step=5000)
+num_simulations = st.slider('Number of Simulations, small number will speed up the calculation', min_value=10000, max_value=500000, value=200000, step=5000)
 
 max_age = max(data['age'])
 death_probabilities = {age: prob * risk_factor for age, prob in zip(data['age'], data[gender])}
