@@ -10,6 +10,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import time
 
 # Load the life expectancy probability
 data = pd.read_csv('life_expect.csv')
@@ -40,7 +41,7 @@ policy_size = 100
 st.text(f'Policy Size: {policy_size} USD, receivable at the end of the event year')
 gender = st.selectbox('Gender', options=['male', 'female'])
 starting_age = st.slider('Age', min_value=0, max_value=110, value=80, step=1)
-annual_premium = st.slider('Annual Premium, eg: +3 means you pay 3 USD every year, premium is fixed every year for whole life insurance, first payable at the beginning of the next year', min_value=-10.0, max_value=20.0, value=3.0, step=0.1)
+annual_premium = st.slider(f'Annual Premium, eg: +3 means you pay 3 USD every year, premium is fixed every year for whole life insurance, first payable at the beginning of {starting_age+1} year', min_value=-10.0, max_value=20.0, value=3.0, step=0.1)
 annual_premium_increase = st.slider('Annual Premium Increase %, 5 means: you pay 3 usd this year, the next year you pay 3x(1+5%)=3.15 usd and so on', min_value=0.0, max_value=20.0, value=0.0, step=1.0) / 100
 discount_rate = st.slider('Discount Rate %, 5.3 means 5.3%', min_value=0.0, max_value=20.0, value=5.3, step=0.1) / 100
 risk_factor = st.slider('Risk Factor, eg: 1.1 means 10% more chance of dying each year comparing with average US person', min_value=0.5, max_value=1.5, value=1.0, step=0.1)
@@ -56,8 +57,10 @@ cumulative_factors = np.insert(cumulative_factors, 0, 0)
 
 if st.button('Calculate!'):
     with st.spinner('Running the simulation...'):
+        start_time = time.time()
         ages_of_death, pv_values = policy_valuation(starting_age, gender, num_simulations, risk_factor, policy_size, annual_premium, max_age, death_probabilities, discount_factors, cumulative_factors)
-    st.success('Calculation completed!')
+        computation_time = time.time() - start_time
+    st.success(f'Calculation completed in {computation_time:.1f} seconds!')
     st.write(f"Expected life till: {np.mean(ages_of_death):.1f}")
     st.write(f"Policy valuation: {np.mean(pv_values):.1f}")
     # Plot the results
