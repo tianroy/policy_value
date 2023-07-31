@@ -2,11 +2,11 @@
 https://www.apexlifesettlements.com/estimate
 
 
-/bsome knowledge:
+**some knowledge**
 - Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older. (1.6-1.9%)
 - Surrendering a policy typically has a return of $469 per $100,000 (less than 0.5% compared to 20% from a life settlement). 
 
-qulifacation:
+**qulifacation**
 - Policy Age: To qualify for a life settlement, you must have held your current policy for at least 2 years.
 - Death Benefit: Your death benefit must be at least $100,000.
 - Age: You must be at least 65 years old to be eligible for a life settlement, and ideal candidates are typically 75 or older. 
@@ -15,14 +15,14 @@ qulifacation:
 https://www.lsa-llc.com/life-settlement-calculator/
 
 
-What Happens If Your Insurance Company Goes Out Of Business?
+**What Happens If Your Insurance Company Goes Out Of Business**
 - state guaranty association will pay up to 300k for life insurance
 
 https://www.forbes.com/advisor/life-insurance/company-out-of-business/
 
 
-Life Settlement Industry Statistics for 2023
-- The average life insurance policy has a face value of $168,000
+**Life Settlement Industry Statistics for 2023**
+- The average life insurance policy has a face value of $168,000 (?question mark here)
 - 85% or more of life insurance policies don’t pay a death benefit: Statistically speaking, 85% of term policies and 88% of universal life policies will expire, lapse, or be surrendered before a death benefit is paid.
 - $200 billion worth of life insurance will be surrendered or lapsed annually through 2027: Even as closed settlements and third-party analyses continue to confirm that life settlements generate higher proceeds for policyholders, people still choose to lapse or surrender their life insurance. In many cases, these policyholders simply don’t know that selling their policy is an option.
 - More than half of Americans don’t know they can sell their life insurance: More than half (55%) of Americans aren’t familiar with life settlements and more than two-thirds (68%) of Americans aren’t familiar with viatical settlements.
@@ -32,7 +32,7 @@ Life Settlement Industry Statistics for 2023
 https://www.harborlifesettlements.com/life-insurance-settlements-and-settlement-statistics/
 
 
-Life Settlement Regulations
+**Life Settlement Regulations**
 The momentum in life settlements caught the attention of state regulators in the
 late 1990s. The industry has since been shaped by state regulations as well as:
 - The Life Settlements Model Act, adopted by the National Conference of
@@ -55,7 +55,7 @@ years.
 https://www.harborlifesettlements.com/wp-content/uploads/2022/02/Harbor_Life_Settlements_Whitepaper.pdf
 
 
-LIFE EXPECTANCY ESTIMATES
+**LIFE EXPECTANCY ESTIMATES**
 Life expectancy estimates or "LEs" are issued as part of a mortality report prepared by a third-party life expectancy underwriter and are required during the life settlement process.
 These 4 companies that commonly issue life expectancy reports in the life settlement industry:
 - 21st Services, LLC
@@ -66,13 +66,13 @@ These 4 companies that commonly issue life expectancy reports in the life settle
 https://www.welcomefunds.com/life-settlement-glossary/life-expectancy.html
 
 
-low correlation and active management is the key
+**low correlation and active management is the key**
 
 https://airassetmanagement.com/insights/volatility-high-low-life-settlement-strategies-perform
 
 
-AAP Life Settlement Valuation - ‘Fair Value’-Valuation
-A majority of the projected IRR are in a band between about 10% and 25%, with a few outliers under 10% and over 25%. The average projected IRR of the whole sample is 19.4%. However the average projected IRR of the secondary market transactions is 20.3%, the respective number for tertiary market transactions is 18.1%
+**AAP Life Settlement Valuation - ‘Fair Value’-Valuation**
+A majority of the projected IRR are in a band between about 10% and 25%, with a few outliers under 10% and over 25%. The average projected **IRR** of the whole sample is 19.4%. However the average projected IRR of the secondary market transactions is 20.3%, the respective number for tertiary market transactions is 18.1%
 
 https://www.aa-partners.ch/fileadmin/files/Valuation/AAP_Life_Settlement_Valuation_-_Manual_V6.0.pdf
 
