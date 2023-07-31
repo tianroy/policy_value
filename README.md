@@ -2,7 +2,7 @@
 https://www.apexlifesettlements.com/estimate
 
 
-some knowledge:
+/bsome knowledge:
 - Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older. (1.6-1.9%)
 - Surrendering a policy typically has a return of $469 per $100,000 (less than 0.5% compared to 20% from a life settlement). 
 
