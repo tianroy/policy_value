@@ -60,6 +60,10 @@ These 4 companies that commonly issue life expectancy reports in the life settle
 - Fasano & Associates, LLC
 - Examination Management Services, Inc.
 
+low correlation and active management is the key
+
+https://airassetmanagement.com/insights/volatility-high-low-life-settlement-strategies-perform
+
 # policy_value
 
 life stats are based on:
