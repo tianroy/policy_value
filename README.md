@@ -1,5 +1,6 @@
-get estimation:
+3rd party estimation (i think bit under valued)
 https://www.apexlifesettlements.com/estimate
+
 
 some knowledge:
 - Considering that the average annual premiums for a term life insurance policy of $500,000 is between $8,000 and $9,500 for men and women aged 70 or older. (1.6-1.9%)
@@ -16,6 +17,7 @@ https://www.lsa-llc.com/life-settlement-calculator/
 
 What Happens If Your Insurance Company Goes Out Of Business?
 - state guaranty association will pay up to 300k for life insurance
+
 https://www.forbes.com/advisor/life-insurance/company-out-of-business/
 
 
@@ -26,7 +28,9 @@ Life Settlement Industry Statistics for 2023
 - More than half of Americans don’t know they can sell their life insurance: More than half (55%) of Americans aren’t familiar with life settlements and more than two-thirds (68%) of Americans aren’t familiar with viatical settlements.
 - The life settlement industry is growing 34% per year on average: The life settlement industry is poised to grow substantially in the coming years. Contributing factors include an aging population and generally low balances in retirement savings accounts. Between 2015 and 2025, the U.S. senior population will grow by 38%, and many of those seniors won’t have sufficient retirement savings to replace their working income. Those who have life insurance — estimated to be 50% of seniors — can liquidate those life insurance assets to produce much-needed funding for retirement.
 - $37.5 billion in lost wealth for seniors: The projected $200 billion in life insurance that will be lapsed or surrendered each year is potentially worth $50 billion on the life settlement market. That assumes a payout rate of 25%, the midpoint of the typical life settlement payout range of 20% to 30% of the policy’s face value. 
+
 https://www.harborlifesettlements.com/life-insurance-settlements-and-settlement-statistics/
+
 
 Life Settlement Regulations
 The momentum in life settlements caught the attention of state regulators in the
@@ -47,7 +51,9 @@ must be in force for a minimum duration before it can be sold. A
 state-mandated waiting period prevents people from buying insurance solely
 for the purpose of selling it. These waiting periods range from two to five
 years.
+
 https://www.harborlifesettlements.com/wp-content/uploads/2022/02/Harbor_Life_Settlements_Whitepaper.pdf
+
 
 LIFE EXPECTANCY ESTIMATES
 Life expectancy estimates or "LEs" are issued as part of a mortality report prepared by a third-party life expectancy underwriter and are required during the life settlement process.
@@ -57,12 +63,19 @@ These 4 companies that commonly issue life expectancy reports in the life settle
 - Fasano & Associates, LLC
 - Examination Management Services, Inc.
 
+https://www.welcomefunds.com/life-settlement-glossary/life-expectancy.html
+
+
 low correlation and active management is the key
+
 https://airassetmanagement.com/insights/volatility-high-low-life-settlement-strategies-perform
+
 
 AAP Life Settlement Valuation - ‘Fair Value’-Valuation
 A majority of the projected IRR are in a band between about 10% and 25%, with a few outliers under 10% and over 25%. The average projected IRR of the whole sample is 19.4%. However the average projected IRR of the secondary market transactions is 20.3%, the respective number for tertiary market transactions is 18.1%
+
 https://www.aa-partners.ch/fileadmin/files/Valuation/AAP_Life_Settlement_Valuation_-_Manual_V6.0.pdf
+
 
 # policy_value
 
