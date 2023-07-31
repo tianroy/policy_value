@@ -50,8 +50,16 @@ state-mandated waiting period prevents people from buying insurance solely
 for the purpose of selling it. These waiting periods range from two to five
 years.
 
+https://www.harborlifesettlements.com/wp-content/uploads/2022/02/Harbor_Life_Settlements_Whitepaper.pdf
 
-our model:
+LIFE EXPECTANCY ESTIMATES
+Life expectancy estimates or "LEs" are issued as part of a mortality report prepared by a third-party life expectancy underwriter and are required during the life settlement process.
+These 4 companies that commonly issue life expectancy reports in the life settlement industry:
+- 21st Services, LLC
+- AVS Underwriting, LLC
+- Fasano & Associates, LLC
+- Examination Management Services, Inc.
+
 # policy_value
 
 life stats are based on:
