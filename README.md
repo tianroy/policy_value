@@ -136,3 +136,7 @@ understanding of risk that a pool of life settlement entails.
 
 to do:
 add a default % for each insurance co. 
+
+more on models and sample default table can be found
+
+https://www.ambest.com/multimedia/lifesettlementinfo.pdf
